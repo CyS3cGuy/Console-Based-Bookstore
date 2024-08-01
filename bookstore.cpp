@@ -53,7 +53,7 @@ bool isValidCardNumber(string cardNumber) {
         
         // Skip non-digit characters
         if (!isdigit(digitChar)) {
-            continue;
+            return false;
         }
         
         // Get the actual integer by subtracting from the char '0'
